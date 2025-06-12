@@ -1,16 +1,159 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">  
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomadiq Travel Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <style>
+    /* 🌿 Prompt 2: Font Pairing & Color Palette */
+    :root {
+      --primary-green: #6BAA75;
+      --soft-blue: #A8DADC;
+      --light-bg: #F1FAEE;
+      --text-dark: #1D3557;
+      --accent-blue: #457B9D;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      color: var(--accent-blue);
+    }
+
+    nav a {
+      margin-left: 1.5em;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary-green);
+    }
+
+    /* 🌿 Prompt 3: Hero Section */
+    .hero {
+      background-color: var(--soft-blue);
+      text-align: center;
+      padding: 4em 1em;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* 🧳 Prompt 4: About Section */
+    .about {
+      padding: 3em 1em;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* 🚀 Prompt 5: Call to Action */
+    .cta {
+      background-color: var(--primary-green);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    .cta button {
+      background-color: white;
+      color: var(--primary-green);
+      border: none;
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #e0f2e6;
+    }
+
+    /* 📱 Prompt 6: Responsive Design */
+    @media (min-width: 600px) {
+      nav a {
+        margin-left: 2em;
+      }
+
+      .hero h1 {
+        font-size: 3em;
+      }
+
+      .about, .cta {
+        padding: 4em 2em;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+  <!-- 🧭 Prompt 1: Header -->
+  <header>
+    <div class="logo">🌍 Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 🌿 Prompt 3: Hero Section -->
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>Discover eco-friendly adventures and responsible travel experiences that celebrate the planet and its people.</p>
+  </section>
+
+  <!-- 🧳 Prompt 4: About Section -->
+  <section class="about">
+    <h2>About Nomadiq Travel Destinations</h2>
+    <p>Nomadiq Travel Destinations is dedicated to curating unforgettable journeys that prioritize sustainability, local communities, and the environment. We believe travel should enrich both the traveler and the world around us.</p>
+  </section>
+
+  <!-- 🚀 Prompt 5: Call-to-Action Section -->
+  <section class="cta">
+    <p>Ready to make your travel meaningful?</p>
+    <button onclick="alert('Let’s plan your trip!')">Plan Your Trip</button>
+  </section>
+
+</body>
 </html>
